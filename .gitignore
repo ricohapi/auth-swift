@@ -1,0 +1,8 @@
+build/
+RicohAPIAuth.xcodeproj/*.pbxuser
+RicohAPIAuth.xcodeproj/*.mode*
+RicohAPIAuth.xcodeproj/xcuserdata/
+RicohAPIAuth.xcodeproj/project.xcworkspace/
+
+.DS_Store
+*.swp
