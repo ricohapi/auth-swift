@@ -6,7 +6,7 @@
 ```sh
 $ git clone https://github.com/ricohapi/auth-swift.git
 ```
-* Open `RicohAPIAuthSample.xcworkspace` in the `RicohAPIAuthSample` directory.
+* Open `RicohAPIAuth.xcworkspace` in the `RicohAPIAuth` directory.
 * Fill your Credentials in `ViewController.swift`.
     * `"### enter your client ID ###"` : replace with your client ID.
     * `"### enter your client secret ###"` : replace with your client secret.
