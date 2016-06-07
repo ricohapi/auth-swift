@@ -17,17 +17,45 @@ You'll also need
 If you don't have them, please register yourself and your client from [THETA Developers Website](http://contest.theta360.com/).
 
 ## Installation
-* Clone Ricoh Auth Client for Swift by running the following command:
+This section shows you two different methods to install Ricoh Auth Client for Swift in your application.  
+See [Auth Sample](https://github.com/ricohapi/auth-swift/tree/master/RicohAPIAuthSample#auth-sample) to try out a sample of Ricoh Auth Client for Swift.
+
+### CocoaPods
+* If it is your first time to use [CocoaPods](https://cocoapods.org/), run the following commands to set it up.
+```sh
+$ gem install cocoapods
+$ pod setup
+```
+
+* Go to your project directory.
+* Create a Podfile by running `pod init` ( if you do not have one yet ), and specify `RicohapiAuth` as follows:
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'YourAppName' do
+  pod 'RicohapiAuth', '~> 1.0.0'
+end
+```
+* Run `pod install` to install `RicohapiAuth`.
+* Open your project's workspace.
+* Choose your application scheme and run it to load the RicohAPIAuth module.
+* Install completed! See [Sample Flow](https://github.com/ricohapi/auth-swift#sample-flow) for a coding example.
+
+### Manually
+* Clone Ricoh Auth Client for Swift by running the following commands:
 ```sh
 $ git clone https://github.com/ricohapi/auth-swift.git
 ```
-
-* Open the new `auth-swift` folder, and drag the `RicohAPIAuth.xcodeproj` into the Project Navigator of your application's Xcode project.
+* Open the new `auth-swift` directory, and drag `RicohAPIAuth.xcodeproj` into the Project Navigator of your application's Xcode project.
 
     > It should appear nested underneath your application's blue project icon.
     > Whether it is above or below all the other Xcode groups does not matter.
 
 * Choose RicohAPIAuth scheme at the scheme menu of Xcode and run it.
+* Choose your application scheme and run it to load the RicohAPIAuth module.
+* Install completed! See [Sample Flow](https://github.com/ricohapi/auth-swift#sample-flow) for a coding example.
 
 ## Sample Flow
 
