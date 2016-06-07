@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B81FB831D06AD50000C6097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81FB821D06AD50000C6097 /* AppDelegate.swift */; };
-		4B81FB851D06AD50000C6097 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81FB841D06AD50000C6097 /* ViewController.swift */; };
-		4B81FB881D06AD50000C6097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B81FB861D06AD50000C6097 /* Main.storyboard */; };
-		4B81FB8A1D06AD50000C6097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B81FB891D06AD50000C6097 /* Assets.xcassets */; };
-		4B81FB8D1D06AD50000C6097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B81FB8B1D06AD50000C6097 /* LaunchScreen.storyboard */; };
+		4B81FBE31D06C5A1000C6097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81FBE21D06C5A1000C6097 /* AppDelegate.swift */; };
+		4B81FBE51D06C5A1000C6097 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81FBE41D06C5A1000C6097 /* ViewController.swift */; };
+		4B81FBE81D06C5A1000C6097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B81FBE61D06C5A1000C6097 /* Main.storyboard */; };
+		4B81FBEA1D06C5A1000C6097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B81FBE91D06C5A1000C6097 /* Assets.xcassets */; };
+		4B81FBED1D06C5A1000C6097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B81FBEB1D06C5A1000C6097 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4B81FB7F1D06AD50000C6097 /* RicohAPIAuthSampleNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RicohAPIAuthSampleNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B81FB821D06AD50000C6097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B81FB841D06AD50000C6097 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4B81FB871D06AD50000C6097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4B81FB891D06AD50000C6097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4B81FB8C1D06AD50000C6097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4B81FB8E1D06AD50000C6097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B81FBDF1D06C5A1000C6097 /* RicohAPIAuthSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RicohAPIAuthSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B81FBE21D06C5A1000C6097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B81FBE41D06C5A1000C6097 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B81FBE71D06C5A1000C6097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B81FBE91D06C5A1000C6097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B81FBEC1D06C5A1000C6097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B81FBEE1D06C5A1000C6097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4B81FB7C1D06AD50000C6097 /* Frameworks */ = {
+		4B81FBDC1D06C5A1000C6097 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,71 +35,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B81FB761D06AD50000C6097 = {
+		4B81FBD61D06C5A1000C6097 = {
 			isa = PBXGroup;
 			children = (
-				4B81FB811D06AD50000C6097 /* RicohAPIAuthSampleNew */,
-				4B81FB801D06AD50000C6097 /* Products */,
+				4B81FBE11D06C5A1000C6097 /* RicohAPIAuthSample */,
+				4B81FBE01D06C5A1000C6097 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4B81FB801D06AD50000C6097 /* Products */ = {
+		4B81FBE01D06C5A1000C6097 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4B81FB7F1D06AD50000C6097 /* RicohAPIAuthSampleNew.app */,
+				4B81FBDF1D06C5A1000C6097 /* RicohAPIAuthSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4B81FB811D06AD50000C6097 /* RicohAPIAuthSampleNew */ = {
+		4B81FBE11D06C5A1000C6097 /* RicohAPIAuthSample */ = {
 			isa = PBXGroup;
 			children = (
-				4B81FB821D06AD50000C6097 /* AppDelegate.swift */,
-				4B81FB841D06AD50000C6097 /* ViewController.swift */,
-				4B81FB861D06AD50000C6097 /* Main.storyboard */,
-				4B81FB891D06AD50000C6097 /* Assets.xcassets */,
-				4B81FB8B1D06AD50000C6097 /* LaunchScreen.storyboard */,
-				4B81FB8E1D06AD50000C6097 /* Info.plist */,
+				4B81FBE21D06C5A1000C6097 /* AppDelegate.swift */,
+				4B81FBE41D06C5A1000C6097 /* ViewController.swift */,
+				4B81FBE61D06C5A1000C6097 /* Main.storyboard */,
+				4B81FBE91D06C5A1000C6097 /* Assets.xcassets */,
+				4B81FBEB1D06C5A1000C6097 /* LaunchScreen.storyboard */,
+				4B81FBEE1D06C5A1000C6097 /* Info.plist */,
 			);
-			path = RicohAPIAuthSampleNew;
+			path = RicohAPIAuthSample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4B81FB7E1D06AD50000C6097 /* RicohAPIAuthSampleNew */ = {
+		4B81FBDE1D06C5A1000C6097 /* RicohAPIAuthSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B81FB911D06AD50000C6097 /* Build configuration list for PBXNativeTarget "RicohAPIAuthSampleNew" */;
+			buildConfigurationList = 4B81FBF11D06C5A1000C6097 /* Build configuration list for PBXNativeTarget "RicohAPIAuthSample" */;
 			buildPhases = (
-				4B81FB7B1D06AD50000C6097 /* Sources */,
-				4B81FB7C1D06AD50000C6097 /* Frameworks */,
-				4B81FB7D1D06AD50000C6097 /* Resources */,
+				4B81FBDB1D06C5A1000C6097 /* Sources */,
+				4B81FBDC1D06C5A1000C6097 /* Frameworks */,
+				4B81FBDD1D06C5A1000C6097 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RicohAPIAuthSampleNew;
-			productName = RicohAPIAuthSampleNew;
-			productReference = 4B81FB7F1D06AD50000C6097 /* RicohAPIAuthSampleNew.app */;
+			name = RicohAPIAuthSample;
+			productName = RicohAPIAuthSample;
+			productReference = 4B81FBDF1D06C5A1000C6097 /* RicohAPIAuthSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4B81FB771D06AD50000C6097 /* Project object */ = {
+		4B81FBD71D06C5A1000C6097 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Ricoh IT Solutions Co.,Ltd.";
 				TargetAttributes = {
-					4B81FB7E1D06AD50000C6097 = {
+					4B81FBDE1D06C5A1000C6097 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 4B81FB7A1D06AD50000C6097 /* Build configuration list for PBXProject "RicohAPIAuthSampleNew" */;
+			buildConfigurationList = 4B81FBDA1D06C5A1000C6097 /* Build configuration list for PBXProject "RicohAPIAuthSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -107,54 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 4B81FB761D06AD50000C6097;
-			productRefGroup = 4B81FB801D06AD50000C6097 /* Products */;
+			mainGroup = 4B81FBD61D06C5A1000C6097;
+			productRefGroup = 4B81FBE01D06C5A1000C6097 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4B81FB7E1D06AD50000C6097 /* RicohAPIAuthSampleNew */,
+				4B81FBDE1D06C5A1000C6097 /* RicohAPIAuthSample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4B81FB7D1D06AD50000C6097 /* Resources */ = {
+		4B81FBDD1D06C5A1000C6097 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B81FB8D1D06AD50000C6097 /* LaunchScreen.storyboard in Resources */,
-				4B81FB8A1D06AD50000C6097 /* Assets.xcassets in Resources */,
-				4B81FB881D06AD50000C6097 /* Main.storyboard in Resources */,
+				4B81FBED1D06C5A1000C6097 /* LaunchScreen.storyboard in Resources */,
+				4B81FBEA1D06C5A1000C6097 /* Assets.xcassets in Resources */,
+				4B81FBE81D06C5A1000C6097 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4B81FB7B1D06AD50000C6097 /* Sources */ = {
+		4B81FBDB1D06C5A1000C6097 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B81FB851D06AD50000C6097 /* ViewController.swift in Sources */,
-				4B81FB831D06AD50000C6097 /* AppDelegate.swift in Sources */,
+				4B81FBE51D06C5A1000C6097 /* ViewController.swift in Sources */,
+				4B81FBE31D06C5A1000C6097 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4B81FB861D06AD50000C6097 /* Main.storyboard */ = {
+		4B81FBE61D06C5A1000C6097 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4B81FB871D06AD50000C6097 /* Base */,
+				4B81FBE71D06C5A1000C6097 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		4B81FB8B1D06AD50000C6097 /* LaunchScreen.storyboard */ = {
+		4B81FBEB1D06C5A1000C6097 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4B81FB8C1D06AD50000C6097 /* Base */,
+				4B81FBEC1D06C5A1000C6097 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4B81FB8F1D06AD50000C6097 /* Debug */ = {
+		4B81FBEF1D06C5A1000C6097 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		4B81FB901D06AD50000C6097 /* Release */ = {
+		4B81FBF01D06C5A1000C6097 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -247,24 +247,24 @@
 			};
 			name = Release;
 		};
-		4B81FB921D06AD50000C6097 /* Debug */ = {
+		4B81FBF21D06C5A1000C6097 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = RicohAPIAuthSampleNew/Info.plist;
+				INFOPLIST_FILE = RicohAPIAuthSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthSampleNew;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		4B81FB931D06AD50000C6097 /* Release */ = {
+		4B81FBF31D06C5A1000C6097 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = RicohAPIAuthSampleNew/Info.plist;
+				INFOPLIST_FILE = RicohAPIAuthSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthSampleNew;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -272,24 +272,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4B81FB7A1D06AD50000C6097 /* Build configuration list for PBXProject "RicohAPIAuthSampleNew" */ = {
+		4B81FBDA1D06C5A1000C6097 /* Build configuration list for PBXProject "RicohAPIAuthSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B81FB8F1D06AD50000C6097 /* Debug */,
-				4B81FB901D06AD50000C6097 /* Release */,
+				4B81FBEF1D06C5A1000C6097 /* Debug */,
+				4B81FBF01D06C5A1000C6097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B81FB911D06AD50000C6097 /* Build configuration list for PBXNativeTarget "RicohAPIAuthSampleNew" */ = {
+		4B81FBF11D06C5A1000C6097 /* Build configuration list for PBXNativeTarget "RicohAPIAuthSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B81FB921D06AD50000C6097 /* Debug */,
-				4B81FB931D06AD50000C6097 /* Release */,
+				4B81FBF21D06C5A1000C6097 /* Debug */,
+				4B81FBF31D06C5A1000C6097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4B81FB771D06AD50000C6097 /* Project object */;
+	rootObject = 4B81FBD71D06C5A1000C6097 /* Project object */;
 }
