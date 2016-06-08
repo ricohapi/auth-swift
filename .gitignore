@@ -4,10 +4,10 @@ RicohAPIAuth.xcodeproj/*.mode*
 RicohAPIAuth.xcodeproj/xcuserdata/
 RicohAPIAuth.xcodeproj/project.xcworkspace/
 
-RicohAPIAuthSample/RicohAPIAuthSample.xcodeproj/*.pbxuser
-RicohAPIAuthSample/RicohAPIAuthSample.xcodeproj/*.mode*
-RicohAPIAuthSample/RicohAPIAuthSample.xcodeproj/xcuserdata/
-RicohAPIAuthSample/RicohAPIAuthSample.xcodeproj/project.xcworkspace/
+Example/RicohAPIAuthSample.xcodeproj/*.pbxuser
+Example/RicohAPIAuthSample.xcodeproj/*.mode*
+Example/RicohAPIAuthSample.xcodeproj/xcuserdata/
+Example/RicohAPIAuthSample.xcodeproj/project.xcworkspace/
 
 .DS_Store
 *.swp
