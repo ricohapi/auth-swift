@@ -45,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B3DB8921D094297008B8833 /* RicohAPIAuth.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RicohAPIAuth.xcodeproj; sourceTree = "<group>"; };
 		592B39271CF6D80200EA0C8C /* RicohAPIAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RicohAPIAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		592B392A1CF6D80200EA0C8C /* RicohAPIAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RicohAPIAuth.h; sourceTree = "<group>"; };
 		592B392C1CF6D80200EA0C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,9 +106,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B3DB8931D094297008B8833 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		592B391D1CF6D80200EA0C8C = {
 			isa = PBXGroup;
 			children = (
+				4B3DB8921D094297008B8833 /* RicohAPIAuth.xcodeproj */,
 				592B39291CF6D80200EA0C8C /* RicohAPIAuth */,
 				592B39351CF6D80200EA0C8C /* RicohAPIAuthTests */,
 				594F622E1CF8036F00B4B9DC /* RicohAPIAuthSample */,
@@ -304,6 +311,12 @@
 			mainGroup = 592B391D1CF6D80200EA0C8C;
 			productRefGroup = 592B39281CF6D80200EA0C8C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4B3DB8931D094297008B8833 /* Products */;
+					ProjectRef = 4B3DB8921D094297008B8833 /* RicohAPIAuth.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				592B39261CF6D80200EA0C8C /* RicohAPIAuth */,
