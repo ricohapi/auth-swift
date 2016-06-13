@@ -35,7 +35,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'YourAppName' do
-  pod 'RicohapiAuth', '~> 1.0.0'
+  pod 'RicohapiAuth', '~> 1.0.1'
 end
 ```
 * Run `pod install` to install `RicohapiAuth`.
