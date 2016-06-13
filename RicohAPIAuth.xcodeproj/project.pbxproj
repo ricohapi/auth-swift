@@ -13,11 +13,6 @@
 		594F62241CF7E4FE00B4B9DC /* RicohAPIAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594F62231CF7E4FE00B4B9DC /* RicohAPIAuth.swift */; };
 		594F62261CF7E54D00B4B9DC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594F62251CF7E54D00B4B9DC /* Extensions.swift */; };
 		594F62281CF7E58A00B4B9DC /* RicohAPIAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594F62271CF7E58A00B4B9DC /* RicohAPIAuthRequest.swift */; };
-		594F62301CF8036F00B4B9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594F622F1CF8036F00B4B9DC /* AppDelegate.swift */; };
-		594F62321CF8036F00B4B9DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594F62311CF8036F00B4B9DC /* ViewController.swift */; };
-		594F62351CF8036F00B4B9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594F62331CF8036F00B4B9DC /* Main.storyboard */; };
-		594F62371CF8036F00B4B9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 594F62361CF8036F00B4B9DC /* Assets.xcassets */; };
-		594F623A1CF8036F00B4B9DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594F62381CF8036F00B4B9DC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +50,6 @@
 		594F62251CF7E54D00B4B9DC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		594F62271CF7E58A00B4B9DC /* RicohAPIAuthRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RicohAPIAuthRequest.swift; sourceTree = "<group>"; };
 		594F622D1CF8036F00B4B9DC /* RicohAPIAuthSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RicohAPIAuthSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		594F622F1CF8036F00B4B9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		594F62311CF8036F00B4B9DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		594F62341CF8036F00B4B9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		594F62361CF8036F00B4B9DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		594F62391CF8036F00B4B9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		594F623B1CF8036F00B4B9DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		594F62401CF8036F00B4B9DC /* RicohAPIAuthSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RicohAPIAuthSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		594F624B1CF8036F00B4B9DC /* RicohAPIAuthSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RicohAPIAuthSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -110,7 +99,6 @@
 			children = (
 				592B39291CF6D80200EA0C8C /* RicohAPIAuth */,
 				592B39351CF6D80200EA0C8C /* RicohAPIAuthTests */,
-				594F622E1CF8036F00B4B9DC /* RicohAPIAuthSample */,
 				592B39281CF6D80200EA0C8C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -146,19 +134,6 @@
 				592B39381CF6D80200EA0C8C /* Info.plist */,
 			);
 			path = RicohAPIAuthTests;
-			sourceTree = "<group>";
-		};
-		594F622E1CF8036F00B4B9DC /* RicohAPIAuthSample */ = {
-			isa = PBXGroup;
-			children = (
-				594F622F1CF8036F00B4B9DC /* AppDelegate.swift */,
-				594F62311CF8036F00B4B9DC /* ViewController.swift */,
-				594F62331CF8036F00B4B9DC /* Main.storyboard */,
-				594F62361CF8036F00B4B9DC /* Assets.xcassets */,
-				594F62381CF8036F00B4B9DC /* LaunchScreen.storyboard */,
-				594F623B1CF8036F00B4B9DC /* Info.plist */,
-			);
-			path = RicohAPIAuthSample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,9 +309,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				594F623A1CF8036F00B4B9DC /* LaunchScreen.storyboard in Resources */,
-				594F62371CF8036F00B4B9DC /* Assets.xcassets in Resources */,
-				594F62351CF8036F00B4B9DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,8 +351,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				594F62321CF8036F00B4B9DC /* ViewController.swift in Sources */,
-				594F62301CF8036F00B4B9DC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,25 +387,6 @@
 			targetProxy = 594F624C1CF8036F00B4B9DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		594F62331CF8036F00B4B9DC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				594F62341CF8036F00B4B9DC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		594F62381CF8036F00B4B9DC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				594F62391CF8036F00B4B9DC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		592B39391CF6D80200EA0C8C /* Debug */ = {
