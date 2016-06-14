@@ -30,6 +30,9 @@ class ViewController: UIViewController {
                 } else {
                     print("status code: \(error.statusCode)")
                     print("error message: \(error.message)")
+                    dispatch_async(dispatch_get_main_queue(), {
+                        self.resultTextField.text = "ERROR: \(error)"
+                    })
                 }
             }
         })
