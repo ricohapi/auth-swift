@@ -9,5 +9,7 @@ Example/RicohAPIAuthSample.xcodeproj/*.mode*
 Example/RicohAPIAuthSample.xcodeproj/xcuserdata/
 Example/RicohAPIAuthSample.xcodeproj/project.xcworkspace/
 
+RicohAPIAuth.xcworkspace/xcuserdata
+
 .DS_Store
 *.swp
