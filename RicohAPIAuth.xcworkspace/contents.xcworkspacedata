@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Example/RicohAPIAuthSample.xcodeproj">
+      location = "group:Sample/RicohAPIAuthSample.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:RicohAPIAuth.xcodeproj">
