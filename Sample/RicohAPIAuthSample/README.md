@@ -1,5 +1,5 @@
 # Auth Sample
-* In this sample, you can try Ricoh Auth Client.
+* In this sample, you can try Ricoh Auth Client for Swift.
 
 ## Using the Sample
 * Clone Ricoh Auth Client for Swift by running the following commands:
