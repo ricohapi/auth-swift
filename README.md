@@ -18,7 +18,7 @@ If you don't have them, please register yourself and your client from [THETA Dev
 
 ## Installation
 This section shows you two different methods to install Ricoh Auth Client for Swift in your application.  
-See [Auth Sample](https://github.com/ricohapi/auth-swift/tree/master/RicohAPIAuthSample#auth-sample) to try out a sample of Ricoh Auth Client for Swift.
+See [Auth Sample](https://github.com/ricohapi/auth-swift/tree/master/Sample/RicohAPIAuthSample#auth-sample) to try out a sample of Ricoh Auth Client for Swift.
 
 ### CocoaPods
 * If it is your first time to use [CocoaPods](https://cocoapods.org/), run the following commands to set it up.
@@ -28,17 +28,17 @@ $ pod setup
 ```
 
 * Go to your project directory.
-* Create a Podfile by running `pod init` ( if you do not have one yet ), and specify `RicohapiAuth` as follows:
+* Create a Podfile by running `pod init` ( if you do not have one yet ), and specify `RicohAPIAuth` as follows:
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 use_frameworks!
 
 target 'YourAppName' do
-  pod 'RicohapiAuth', '~> 1.0.1'
+  pod 'RicohAPIAuth', '~> 1.0.1'
 end
 ```
-* Run `pod install` to install `RicohapiAuth`.
+* Run `pod install` to install `RicohAPIAuth`.
 * Open your project's workspace.
 * Choose your application scheme and run it to load the RicohAPIAuth module.
 * Install completed! See [Sample Flow](https://github.com/ricohapi/auth-swift#sample-flow) for a coding example.
