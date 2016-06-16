@@ -3,12 +3,12 @@ Pod::Spec.new do |s|
   s.version      = "1.0.1"
   s.summary      = "Ricoh Auth Client"
   s.description  = "Ricoh Auth Client in Swift"
-#  s.homepage     = "https://github.com/ricohapi/auth-swift"
-  s.homepage     = "https://github.com/hishida/auth-swift"
+  s.homepage     = "https://github.com/ricohapi/auth-swift"
   s.license      = "MIT"
   s.author       = "Ricoh Company, Ltd."
 
 #  s.source       = { :git => "https://github.com/ricohapi/auth-swift.git", :tag => "#{s.version}" }
+# delete if mstorage operation confirmation is OK.
   s.source       = { :git => "https://github.com/hishida/auth-swift.git", :tag => "#{s.version}" }
   s.source_files  = "Source/*.swift"
 
