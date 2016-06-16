@@ -80,7 +80,7 @@
 		4B81FBD61D06C5A1000C6097 = {
 			isa = PBXGroup;
 			children = (
-				4B81FBE11D06C5A1000C6097 /* RicohAPIAuthSample */,
+				4B81FBE11D06C5A1000C6097 /* Source */,
 				4B81FBE01D06C5A1000C6097 /* Products */,
 				597D48B21D0E78C500F90B9C /* RicohAPIAuth.xcodeproj */,
 			);
@@ -94,7 +94,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4B81FBE11D06C5A1000C6097 /* RicohAPIAuthSample */ = {
+		4B81FBE11D06C5A1000C6097 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				4B81FBE21D06C5A1000C6097 /* AppDelegate.swift */,
@@ -104,7 +104,7 @@
 				4B81FBEB1D06C5A1000C6097 /* LaunchScreen.storyboard */,
 				4B81FBEE1D06C5A1000C6097 /* Info.plist */,
 			);
-			path = RicohAPIAuthSample;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		597D48B31D0E78C500F90B9C /* Products */ = {
@@ -337,7 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				INFOPLIST_FILE = RicohAPIAuthSample/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,7 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				INFOPLIST_FILE = RicohAPIAuthSample/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
