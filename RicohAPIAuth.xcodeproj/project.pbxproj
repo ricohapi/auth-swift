@@ -13,11 +13,6 @@
 		594F62241CF7E4FE00B4B9DC /* RicohAPIAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594F62231CF7E4FE00B4B9DC /* RicohAPIAuth.swift */; };
 		594F62261CF7E54D00B4B9DC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594F62251CF7E54D00B4B9DC /* Extensions.swift */; };
 		594F62281CF7E58A00B4B9DC /* RicohAPIAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594F62271CF7E58A00B4B9DC /* RicohAPIAuthRequest.swift */; };
-		594F62301CF8036F00B4B9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594F622F1CF8036F00B4B9DC /* AppDelegate.swift */; };
-		594F62321CF8036F00B4B9DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594F62311CF8036F00B4B9DC /* ViewController.swift */; };
-		594F62351CF8036F00B4B9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594F62331CF8036F00B4B9DC /* Main.storyboard */; };
-		594F62371CF8036F00B4B9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 594F62361CF8036F00B4B9DC /* Assets.xcassets */; };
-		594F623A1CF8036F00B4B9DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594F62381CF8036F00B4B9DC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,23 +23,10 @@
 			remoteGlobalIDString = 592B39261CF6D80200EA0C8C;
 			remoteInfo = RicohAPIAuth;
 		};
-		594F62411CF8036F00B4B9DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 592B391E1CF6D80200EA0C8C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 594F622C1CF8036F00B4B9DC;
-			remoteInfo = RicohAPIAuthSample;
-		};
-		594F624C1CF8036F00B4B9DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 592B391E1CF6D80200EA0C8C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 594F622C1CF8036F00B4B9DC;
-			remoteInfo = RicohAPIAuthSample;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B3DB8921D094297008B8833 /* RicohAPIAuth.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RicohAPIAuth.xcodeproj; sourceTree = "<group>"; };
 		592B39271CF6D80200EA0C8C /* RicohAPIAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RicohAPIAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		592B392A1CF6D80200EA0C8C /* RicohAPIAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RicohAPIAuth.h; sourceTree = "<group>"; };
 		592B392C1CF6D80200EA0C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,15 +36,6 @@
 		594F62231CF7E4FE00B4B9DC /* RicohAPIAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RicohAPIAuth.swift; sourceTree = "<group>"; };
 		594F62251CF7E54D00B4B9DC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		594F62271CF7E58A00B4B9DC /* RicohAPIAuthRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RicohAPIAuthRequest.swift; sourceTree = "<group>"; };
-		594F622D1CF8036F00B4B9DC /* RicohAPIAuthSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RicohAPIAuthSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		594F622F1CF8036F00B4B9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		594F62311CF8036F00B4B9DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		594F62341CF8036F00B4B9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		594F62361CF8036F00B4B9DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		594F62391CF8036F00B4B9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		594F623B1CF8036F00B4B9DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		594F62401CF8036F00B4B9DC /* RicohAPIAuthSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RicohAPIAuthSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		594F624B1CF8036F00B4B9DC /* RicohAPIAuthSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RicohAPIAuthSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,36 +54,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		594F622A1CF8036F00B4B9DC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		594F623D1CF8036F00B4B9DC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		594F62481CF8036F00B4B9DC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B3DB8931D094297008B8833 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		592B391D1CF6D80200EA0C8C = {
 			isa = PBXGroup;
 			children = (
-				592B39291CF6D80200EA0C8C /* RicohAPIAuth */,
-				592B39351CF6D80200EA0C8C /* RicohAPIAuthTests */,
-				594F622E1CF8036F00B4B9DC /* RicohAPIAuthSample */,
+				592B39291CF6D80200EA0C8C /* Source */,
+				592B39351CF6D80200EA0C8C /* Tests */,
 				592B39281CF6D80200EA0C8C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,14 +76,11 @@
 			children = (
 				592B39271CF6D80200EA0C8C /* RicohAPIAuth.framework */,
 				592B39311CF6D80200EA0C8C /* RicohAPIAuthTests.xctest */,
-				594F622D1CF8036F00B4B9DC /* RicohAPIAuthSample.app */,
-				594F62401CF8036F00B4B9DC /* RicohAPIAuthSampleTests.xctest */,
-				594F624B1CF8036F00B4B9DC /* RicohAPIAuthSampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		592B39291CF6D80200EA0C8C /* RicohAPIAuth */ = {
+		592B39291CF6D80200EA0C8C /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				592B392A1CF6D80200EA0C8C /* RicohAPIAuth.h */,
@@ -136,29 +89,16 @@
 				594F62251CF7E54D00B4B9DC /* Extensions.swift */,
 				594F62271CF7E58A00B4B9DC /* RicohAPIAuthRequest.swift */,
 			);
-			path = RicohAPIAuth;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		592B39351CF6D80200EA0C8C /* RicohAPIAuthTests */ = {
+		592B39351CF6D80200EA0C8C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				592B39361CF6D80200EA0C8C /* RicohAPIAuthTests.swift */,
 				592B39381CF6D80200EA0C8C /* Info.plist */,
 			);
-			path = RicohAPIAuthTests;
-			sourceTree = "<group>";
-		};
-		594F622E1CF8036F00B4B9DC /* RicohAPIAuthSample */ = {
-			isa = PBXGroup;
-			children = (
-				594F622F1CF8036F00B4B9DC /* AppDelegate.swift */,
-				594F62311CF8036F00B4B9DC /* ViewController.swift */,
-				594F62331CF8036F00B4B9DC /* Main.storyboard */,
-				594F62361CF8036F00B4B9DC /* Assets.xcassets */,
-				594F62381CF8036F00B4B9DC /* LaunchScreen.storyboard */,
-				594F623B1CF8036F00B4B9DC /* Info.plist */,
-			);
-			path = RicohAPIAuthSample;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,59 +151,6 @@
 			productReference = 592B39311CF6D80200EA0C8C /* RicohAPIAuthTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		594F622C1CF8036F00B4B9DC /* RicohAPIAuthSample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 594F62521CF8036F00B4B9DC /* Build configuration list for PBXNativeTarget "RicohAPIAuthSample" */;
-			buildPhases = (
-				594F62291CF8036F00B4B9DC /* Sources */,
-				594F622A1CF8036F00B4B9DC /* Frameworks */,
-				594F622B1CF8036F00B4B9DC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RicohAPIAuthSample;
-			productName = RicohAPIAuthSample;
-			productReference = 594F622D1CF8036F00B4B9DC /* RicohAPIAuthSample.app */;
-			productType = "com.apple.product-type.application";
-		};
-		594F623F1CF8036F00B4B9DC /* RicohAPIAuthSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 594F62551CF8036F00B4B9DC /* Build configuration list for PBXNativeTarget "RicohAPIAuthSampleTests" */;
-			buildPhases = (
-				594F623C1CF8036F00B4B9DC /* Sources */,
-				594F623D1CF8036F00B4B9DC /* Frameworks */,
-				594F623E1CF8036F00B4B9DC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				594F62421CF8036F00B4B9DC /* PBXTargetDependency */,
-			);
-			name = RicohAPIAuthSampleTests;
-			productName = RicohAPIAuthSampleTests;
-			productReference = 594F62401CF8036F00B4B9DC /* RicohAPIAuthSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		594F624A1CF8036F00B4B9DC /* RicohAPIAuthSampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 594F62581CF8036F00B4B9DC /* Build configuration list for PBXNativeTarget "RicohAPIAuthSampleUITests" */;
-			buildPhases = (
-				594F62471CF8036F00B4B9DC /* Sources */,
-				594F62481CF8036F00B4B9DC /* Frameworks */,
-				594F62491CF8036F00B4B9DC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				594F624D1CF8036F00B4B9DC /* PBXTargetDependency */,
-			);
-			name = RicohAPIAuthSampleUITests;
-			productName = RicohAPIAuthSampleUITests;
-			productReference = 594F624B1CF8036F00B4B9DC /* RicohAPIAuthSampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -280,17 +167,6 @@
 					592B39301CF6D80200EA0C8C = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
-					594F622C1CF8036F00B4B9DC = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
-					594F623F1CF8036F00B4B9DC = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 594F622C1CF8036F00B4B9DC;
-					};
-					594F624A1CF8036F00B4B9DC = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 594F622C1CF8036F00B4B9DC;
-					};
 				};
 			};
 			buildConfigurationList = 592B39211CF6D80200EA0C8C /* Build configuration list for PBXProject "RicohAPIAuth" */;
@@ -304,13 +180,16 @@
 			mainGroup = 592B391D1CF6D80200EA0C8C;
 			productRefGroup = 592B39281CF6D80200EA0C8C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4B3DB8931D094297008B8833 /* Products */;
+					ProjectRef = 4B3DB8921D094297008B8833 /* RicohAPIAuth.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				592B39261CF6D80200EA0C8C /* RicohAPIAuth */,
 				592B39301CF6D80200EA0C8C /* RicohAPIAuthTests */,
-				594F622C1CF8036F00B4B9DC /* RicohAPIAuthSample */,
-				594F623F1CF8036F00B4B9DC /* RicohAPIAuthSampleTests */,
-				594F624A1CF8036F00B4B9DC /* RicohAPIAuthSampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -324,30 +203,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		592B392F1CF6D80200EA0C8C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		594F622B1CF8036F00B4B9DC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				594F623A1CF8036F00B4B9DC /* LaunchScreen.storyboard in Resources */,
-				594F62371CF8036F00B4B9DC /* Assets.xcassets in Resources */,
-				594F62351CF8036F00B4B9DC /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		594F623E1CF8036F00B4B9DC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		594F62491CF8036F00B4B9DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,29 +230,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		594F62291CF8036F00B4B9DC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				594F62321CF8036F00B4B9DC /* ViewController.swift in Sources */,
-				594F62301CF8036F00B4B9DC /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		594F623C1CF8036F00B4B9DC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		594F62471CF8036F00B4B9DC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -406,36 +238,7 @@
 			target = 592B39261CF6D80200EA0C8C /* RicohAPIAuth */;
 			targetProxy = 592B39331CF6D80200EA0C8C /* PBXContainerItemProxy */;
 		};
-		594F62421CF8036F00B4B9DC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 594F622C1CF8036F00B4B9DC /* RicohAPIAuthSample */;
-			targetProxy = 594F62411CF8036F00B4B9DC /* PBXContainerItemProxy */;
-		};
-		594F624D1CF8036F00B4B9DC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 594F622C1CF8036F00B4B9DC /* RicohAPIAuthSample */;
-			targetProxy = 594F624C1CF8036F00B4B9DC /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		594F62331CF8036F00B4B9DC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				594F62341CF8036F00B4B9DC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		594F62381CF8036F00B4B9DC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				594F62391CF8036F00B4B9DC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		592B39391CF6D80200EA0C8C /* Debug */ = {
@@ -537,7 +340,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RicohAPIAuth/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuth;
@@ -555,7 +358,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RicohAPIAuth/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuth;
@@ -567,7 +370,7 @@
 		592B393F1CF6D80200EA0C8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = RicohAPIAuthTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -577,78 +380,10 @@
 		592B39401CF6D80200EA0C8C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = RicohAPIAuthTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		594F62531CF8036F00B4B9DC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = RicohAPIAuthSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthSample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		594F62541CF8036F00B4B9DC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = RicohAPIAuthSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthSample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		594F62561CF8036F00B4B9DC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = RicohAPIAuthSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthSampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RicohAPIAuthSample.app/RicohAPIAuthSample";
-			};
-			name = Debug;
-		};
-		594F62571CF8036F00B4B9DC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = RicohAPIAuthSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthSampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RicohAPIAuthSample.app/RicohAPIAuthSample";
-			};
-			name = Release;
-		};
-		594F62591CF8036F00B4B9DC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = RicohAPIAuthSampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthSampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = RicohAPIAuthSample;
-			};
-			name = Debug;
-		};
-		594F625A1CF8036F00B4B9DC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = RicohAPIAuthSampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthSampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = RicohAPIAuthSample;
 			};
 			name = Release;
 		};
@@ -678,33 +413,6 @@
 			buildConfigurations = (
 				592B393F1CF6D80200EA0C8C /* Debug */,
 				592B39401CF6D80200EA0C8C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		594F62521CF8036F00B4B9DC /* Build configuration list for PBXNativeTarget "RicohAPIAuthSample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				594F62531CF8036F00B4B9DC /* Debug */,
-				594F62541CF8036F00B4B9DC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		594F62551CF8036F00B4B9DC /* Build configuration list for PBXNativeTarget "RicohAPIAuthSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				594F62561CF8036F00B4B9DC /* Debug */,
-				594F62571CF8036F00B4B9DC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		594F62581CF8036F00B4B9DC /* Build configuration list for PBXNativeTarget "RicohAPIAuthSampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				594F62591CF8036F00B4B9DC /* Debug */,
-				594F625A1CF8036F00B4B9DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

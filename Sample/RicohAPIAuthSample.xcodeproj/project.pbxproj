@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B81FBE31D06C5A1000C6097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81FBE21D06C5A1000C6097 /* AppDelegate.swift */; };
+		4B81FBE51D06C5A1000C6097 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B81FBE41D06C5A1000C6097 /* ViewController.swift */; };
+		4B81FBE81D06C5A1000C6097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B81FBE61D06C5A1000C6097 /* Main.storyboard */; };
+		4B81FBEA1D06C5A1000C6097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B81FBE91D06C5A1000C6097 /* Assets.xcassets */; };
+		4B81FBED1D06C5A1000C6097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B81FBEB1D06C5A1000C6097 /* LaunchScreen.storyboard */; };
+		597D48BB1D0E78D400F90B9C /* RicohAPIAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597D48B81D0E78C600F90B9C /* RicohAPIAuth.framework */; };
+		597D48BC1D0E78D400F90B9C /* RicohAPIAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 597D48B81D0E78C600F90B9C /* RicohAPIAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		597D48B71D0E78C600F90B9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 597D48B21D0E78C500F90B9C /* RicohAPIAuth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 592B39271CF6D80200EA0C8C;
+			remoteInfo = RicohAPIAuth;
+		};
+		597D48B91D0E78C600F90B9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 597D48B21D0E78C500F90B9C /* RicohAPIAuth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 592B39311CF6D80200EA0C8C;
+			remoteInfo = RicohAPIAuthTests;
+		};
+		597D48BD1D0E78D400F90B9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 597D48B21D0E78C500F90B9C /* RicohAPIAuth.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 592B39261CF6D80200EA0C8C;
+			remoteInfo = RicohAPIAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		597D48BF1D0E78D500F90B9C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				597D48BC1D0E78D400F90B9C /* RicohAPIAuth.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4B81FBDF1D06C5A1000C6097 /* RicohAPIAuthSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RicohAPIAuthSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B81FBE21D06C5A1000C6097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B81FBE41D06C5A1000C6097 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B81FBE71D06C5A1000C6097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B81FBE91D06C5A1000C6097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B81FBEC1D06C5A1000C6097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B81FBEE1D06C5A1000C6097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		597D48B21D0E78C500F90B9C /* RicohAPIAuth.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RicohAPIAuth.xcodeproj; path = ../RicohAPIAuth.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B81FBDC1D06C5A1000C6097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				597D48BB1D0E78D400F90B9C /* RicohAPIAuth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B81FBD61D06C5A1000C6097 = {
+			isa = PBXGroup;
+			children = (
+				4B81FBE11D06C5A1000C6097 /* Source */,
+				4B81FBE01D06C5A1000C6097 /* Products */,
+				597D48B21D0E78C500F90B9C /* RicohAPIAuth.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		4B81FBE01D06C5A1000C6097 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B81FBDF1D06C5A1000C6097 /* RicohAPIAuthSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B81FBE11D06C5A1000C6097 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4B81FBE21D06C5A1000C6097 /* AppDelegate.swift */,
+				4B81FBE41D06C5A1000C6097 /* ViewController.swift */,
+				4B81FBE61D06C5A1000C6097 /* Main.storyboard */,
+				4B81FBE91D06C5A1000C6097 /* Assets.xcassets */,
+				4B81FBEB1D06C5A1000C6097 /* LaunchScreen.storyboard */,
+				4B81FBEE1D06C5A1000C6097 /* Info.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		597D48B31D0E78C500F90B9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				597D48B81D0E78C600F90B9C /* RicohAPIAuth.framework */,
+				597D48BA1D0E78C600F90B9C /* RicohAPIAuthTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B81FBDE1D06C5A1000C6097 /* RicohAPIAuthSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B81FBF11D06C5A1000C6097 /* Build configuration list for PBXNativeTarget "RicohAPIAuthSample" */;
+			buildPhases = (
+				4B81FBDB1D06C5A1000C6097 /* Sources */,
+				4B81FBDC1D06C5A1000C6097 /* Frameworks */,
+				4B81FBDD1D06C5A1000C6097 /* Resources */,
+				597D48BF1D0E78D500F90B9C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				597D48BE1D0E78D400F90B9C /* PBXTargetDependency */,
+			);
+			name = RicohAPIAuthSample;
+			productName = RicohAPIAuthSample;
+			productReference = 4B81FBDF1D06C5A1000C6097 /* RicohAPIAuthSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B81FBD71D06C5A1000C6097 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Ricoh IT Solutions Co.,Ltd.";
+				TargetAttributes = {
+					4B81FBDE1D06C5A1000C6097 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4B81FBDA1D06C5A1000C6097 /* Build configuration list for PBXProject "RicohAPIAuthSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B81FBD61D06C5A1000C6097;
+			productRefGroup = 4B81FBE01D06C5A1000C6097 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 597D48B31D0E78C500F90B9C /* Products */;
+					ProjectRef = 597D48B21D0E78C500F90B9C /* RicohAPIAuth.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4B81FBDE1D06C5A1000C6097 /* RicohAPIAuthSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		597D48B81D0E78C600F90B9C /* RicohAPIAuth.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RicohAPIAuth.framework;
+			remoteRef = 597D48B71D0E78C600F90B9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		597D48BA1D0E78C600F90B9C /* RicohAPIAuthTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RicohAPIAuthTests.xctest;
+			remoteRef = 597D48B91D0E78C600F90B9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B81FBDD1D06C5A1000C6097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B81FBED1D06C5A1000C6097 /* LaunchScreen.storyboard in Resources */,
+				4B81FBEA1D06C5A1000C6097 /* Assets.xcassets in Resources */,
+				4B81FBE81D06C5A1000C6097 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B81FBDB1D06C5A1000C6097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B81FBE51D06C5A1000C6097 /* ViewController.swift in Sources */,
+				4B81FBE31D06C5A1000C6097 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		597D48BE1D0E78D400F90B9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RicohAPIAuth;
+			targetProxy = 597D48BD1D0E78D400F90B9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B81FBE61D06C5A1000C6097 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B81FBE71D06C5A1000C6097 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B81FBEB1D06C5A1000C6097 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B81FBEC1D06C5A1000C6097 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B81FBEF1D06C5A1000C6097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B81FBF01D06C5A1000C6097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B81FBF21D06C5A1000C6097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Source/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4B81FBF31D06C5A1000C6097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Source/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.RicohAPIAuthSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B81FBDA1D06C5A1000C6097 /* Build configuration list for PBXProject "RicohAPIAuthSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B81FBEF1D06C5A1000C6097 /* Debug */,
+				4B81FBF01D06C5A1000C6097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B81FBF11D06C5A1000C6097 /* Build configuration list for PBXNativeTarget "RicohAPIAuthSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B81FBF21D06C5A1000C6097 /* Debug */,
+				4B81FBF31D06C5A1000C6097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B81FBD71D06C5A1000C6097 /* Project object */;
+}
