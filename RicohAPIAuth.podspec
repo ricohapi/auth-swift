@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RicohAPIAuth"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Ricoh Auth Client"
   s.description  = "Ricoh Auth Client in Swift"
   s.homepage     = "https://github.com/ricohapi/auth-swift"
