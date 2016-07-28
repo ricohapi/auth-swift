@@ -26,6 +26,7 @@ public class AuthClient {
     var accessToken: String? = nil
     var refreshToken: String? = nil
     var expire: NSDate? = nil
+    let expireMargin: Double = -10
     
     public init(clientId: String, clientSecret: String) {
         self.clientId = clientId
@@ -83,7 +84,7 @@ public class AuthClient {
             return
         }
         
-        if NSDate().compare(expire!) == NSComparisonResult.OrderedAscending {
+        if NSDate().compare(expire!.dateByAddingTimeInterval(expireMargin)) == NSComparisonResult.OrderedAscending {
             completionHandler(
                 AuthResult(accessToken: accessToken!),
                 AuthError(statusCode: nil, message: nil))
