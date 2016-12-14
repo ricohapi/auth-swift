@@ -14,25 +14,25 @@ class ViewController: UIViewController {
         clientSecret: "### enter your client secret ###"
     )
     
-    @IBAction func tapHandler(sender: AnyObject) {
+    @IBAction func tapHandler(_ sender: AnyObject) {
         authClient.setResourceOwnerCreds(
             userId: "### enter your user id ###",
             userPass: "### enter your user password ###"
         )
         
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+        DispatchQueue.global().async(execute: {
             self.authClient.session(){result, error in
                 if error.isEmpty() {
                     print("access token : \(result.accessToken)")
-                    dispatch_async(dispatch_get_main_queue(), {
+                    DispatchQueue.main.async {
                         self.resultTextField.text = "connect!"
-                    })
+                    }
                 } else {
                     print("status code: \(error.statusCode)")
                     print("error message: \(error.message)")
-                    dispatch_async(dispatch_get_main_queue(), {
+                    DispatchQueue.main.async {
                         self.resultTextField.text = "ERROR: \(error)"
-                    })
+                    }
                 }
             }
         })

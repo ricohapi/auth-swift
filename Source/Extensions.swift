@@ -5,7 +5,7 @@
 
 import Foundation
 
-extension NSHTTPURLResponse {
+extension HTTPURLResponse {
     func isSucceeded() -> Bool {
         return (200..<300).contains(self.statusCode)
     }
