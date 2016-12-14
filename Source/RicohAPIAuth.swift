@@ -18,14 +18,14 @@ public struct AuthError {
     }
 }
 
-public class AuthClient {
+open class AuthClient {
     let clientId: String?
     let clientSecret: String?
     var userId = ""
     var userPass = ""
     var accessToken: String? = nil
     var refreshToken: String? = nil
-    var expire: NSDate? = nil
+    var expire: Date? = nil
     let expireMargin: Double = -10
     
     public init(clientId: String, clientSecret: String) {
@@ -33,23 +33,23 @@ public class AuthClient {
         self.clientSecret = clientSecret
     }
     
-    public func setResourceOwnerCreds(userId userId: String, userPass: String) {
+    open func setResourceOwnerCreds(userId: String, userPass: String) {
         self.userId = userId
         self.userPass = userPass
     }
     
-    public func session(completionHandler: (AuthResult, AuthError) -> Void) {
+    open func session(_ completionHandler: @escaping (AuthResult, AuthError) -> Void) {
         token(){(data, resp, err) in
-            if err != nil {
+            if let err = err {
                 completionHandler(
                     AuthResult(accessToken: nil),
-                    AuthError(statusCode: nil, message: "request failed: \(err!.code): \(err!.domain)"))
+                    AuthError(statusCode: nil, message: "request failed: \(err.localizedDescription)"))
                 return
             }
             
-            let httpresp = resp as! NSHTTPURLResponse
+            let httpresp = resp as! HTTPURLResponse
             let statusCode = httpresp.statusCode
-            let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding) as! String
+            let dataString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue) as! String
             
             if !httpresp.isSucceeded() {
                 completionHandler(
@@ -59,15 +59,14 @@ public class AuthClient {
             }
             
             do {
-                let dataDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
-                let authToken = dataDictionary["access_token"]!
-                if authToken != nil {
-                    self.discovery(authToken: authToken as! String, completionHandler: completionHandler)
-                } else {
+                let dataDictionary = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
+                guard let dictionary = dataDictionary as? [String: Any], let authToken = dictionary["access_token"] as? String else {
                     completionHandler(
                         AuthResult(accessToken: nil),
                         AuthError(statusCode: statusCode, message: "invalid response: \(dataString)"))
+                    return
                 }
+                self.discovery(authToken: authToken, completionHandler: completionHandler)
             } catch {
                 completionHandler(
                     AuthResult(accessToken: nil),
@@ -76,7 +75,7 @@ public class AuthClient {
         }
     }
     
-    public func getAccessToken(completionHandler: (AuthResult, AuthError) -> Void) -> Void {
+    open func getAccessToken(_ completionHandler: @escaping (AuthResult, AuthError) -> Void) -> Void {
         if accessToken == nil {
             completionHandler(
                 AuthResult(accessToken: nil),
@@ -84,7 +83,7 @@ public class AuthClient {
             return
         }
         
-        if NSDate().compare(expire!.dateByAddingTimeInterval(expireMargin)) == NSComparisonResult.OrderedAscending {
+        if Date().compare(expire!.addingTimeInterval(expireMargin)) == ComparisonResult.orderedAscending {
             completionHandler(
                 AuthResult(accessToken: accessToken!),
                 AuthError(statusCode: nil, message: nil))
@@ -94,7 +93,7 @@ public class AuthClient {
         refresh(completionHandler)
     }
     
-    func token(completionHandler completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void) -> Void {
+    func token(completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> Void {
         RicohAPIAuthRequest.post(
             url: "https://auth.beta2.ucs.ricoh.com/auth/token",
             header: [
@@ -112,7 +111,7 @@ public class AuthClient {
         )
     }
     
-    func discovery(authToken authToken: String, completionHandler: (AuthResult, AuthError) -> Void) -> Void {
+    func discovery(authToken: String, completionHandler: @escaping (AuthResult, AuthError) -> Void) -> Void {
         RicohAPIAuthRequest.post(
             url: "https://auth.beta2.ucs.ricoh.com/auth/discovery",
             header: [
@@ -123,16 +122,16 @@ public class AuthClient {
                 "scope" : "https://ucs.ricoh.com/scope/api/udc2"
             ]
         ){(data, resp, err) in
-            if err != nil {
+            if let err = err {
                 completionHandler(
                     AuthResult(accessToken: nil),
-                    AuthError(statusCode: nil, message: "request failed: \(err!.code): \(err!.domain)"))
+                    AuthError(statusCode: nil, message: "request failed: \(err.localizedDescription)"))
                 return
             }
             
-            let httpresp = resp as! NSHTTPURLResponse
+            let httpresp = resp as! HTTPURLResponse
             let statusCode = httpresp.statusCode
-            let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding) as! String
+            let dataString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue) as! String
             
             if !httpresp.isSucceeded() {
                 completionHandler(
@@ -142,21 +141,21 @@ public class AuthClient {
             }
             
             do {
-                let dataDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
-                let udc2Dictionary = dataDictionary["https://ucs.ricoh.com/scope/api/udc2"]!!
-                let accessToken = udc2Dictionary["access_token"]!
-                if accessToken != nil {
-                    self.accessToken = (accessToken as! String)
-                    self.expire = NSDate().dateByAddingTimeInterval(Double(udc2Dictionary["expires_in"] as! Int))
-                    self.refreshToken = (udc2Dictionary["refresh_token"] as! String)
-                    completionHandler(
-                        AuthResult(accessToken: (accessToken as! String)),
-                        AuthError(statusCode: nil, message: nil))
-                } else {
+                let dataDictionary = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
+                guard let dictionary = dataDictionary as? [String: Any],
+                    let udc2Dictionary = dictionary["https://ucs.ricoh.com/scope/api/udc2"] as? [String: Any],
+                    let accessToken = udc2Dictionary["access_token"] as? String else {
                     completionHandler(
                         AuthResult(accessToken: nil),
                         AuthError(statusCode: statusCode, message: "invalid response: \(dataString)"))
+                    return
                 }
+                self.accessToken = accessToken
+                self.expire = Date().addingTimeInterval(Double(udc2Dictionary["expires_in"] as! Int))
+                self.refreshToken = (udc2Dictionary["refresh_token"] as! String)
+                completionHandler(
+                    AuthResult(accessToken: accessToken),
+                    AuthError(statusCode: nil, message: nil))
             } catch {
                 completionHandler(
                     AuthResult(accessToken: nil),
@@ -165,7 +164,7 @@ public class AuthClient {
         }
     }
     
-    func refresh(completionHandler: (AuthResult, AuthError) -> Void) -> Void {
+    func refresh(_ completionHandler: @escaping (AuthResult, AuthError) -> Void) -> Void {
         RicohAPIAuthRequest.post(
             url: "https://auth.beta2.ucs.ricoh.com/auth/token",
             header: [
@@ -178,16 +177,16 @@ public class AuthClient {
                 "grant_type" : "refresh_token"
             ]
         ){(data, resp, err) in
-            if err != nil {
+            if let err = err {
                 completionHandler(
                     AuthResult(accessToken: nil),
-                    AuthError(statusCode: nil, message: "request failed: \(err!.code): \(err!.domain)"))
+                    AuthError(statusCode: nil, message: "request failed: \(err.localizedDescription)"))
                 return
             }
             
-            let httpresp = resp as! NSHTTPURLResponse
+            let httpresp = resp as! HTTPURLResponse
             let statusCode = httpresp.statusCode
-            let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding) as! String
+            let dataString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue) as! String
             
             if !httpresp.isSucceeded() {
                 completionHandler(
@@ -197,20 +196,22 @@ public class AuthClient {
             }
             
             do {
-                let dataDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
-                let accessToken = dataDictionary["access_token"]!
-                if accessToken != nil {
-                    self.accessToken = (accessToken as! String)
-                    self.expire = NSDate().dateByAddingTimeInterval(Double(dataDictionary["expires_in"] as! Int))
-                    self.refreshToken = (dataDictionary["refresh_token"] as! String)
-                    completionHandler(
-                        AuthResult(accessToken: (accessToken as! String)),
-                        AuthError(statusCode: nil, message: nil))
-                } else {
+                let dataDictionary = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
+                guard let dictionary = dataDictionary as? [String: Any],
+                    let accessToken = dictionary["access_token"] as? String,
+                    let expiresIn = dictionary["expires_in"] as? Int,
+                    let refreshToken = dictionary["refresh_token"] as? String else {
                     completionHandler(
                         AuthResult(accessToken: nil),
                         AuthError(statusCode: statusCode, message: "invalid response: \(dataString)"))
+                    return
                 }
+                self.accessToken = accessToken
+                self.expire = Date().addingTimeInterval(Double(expiresIn))
+                self.refreshToken = refreshToken
+                completionHandler(
+                    AuthResult(accessToken: accessToken),
+                    AuthError(statusCode: nil, message: nil))
             } catch {
                 completionHandler(
                     AuthResult(accessToken: nil),

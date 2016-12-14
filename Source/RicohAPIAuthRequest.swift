@@ -6,7 +6,7 @@
 import Foundation
 
 class RicohAPIAuthRequest {
-    static func get(url url: String, queryParams: Dictionary<String, String>, header: Dictionary<String, String>, completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void) {
+    static func get(url: String, queryParams: Dictionary<String, String>, header: Dictionary<String, String>, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) {
         var requestUrl = url
         if queryParams.count > 0 {
             requestUrl += "?" + joinParameters(params: queryParams)
@@ -20,7 +20,7 @@ class RicohAPIAuthRequest {
         )
     }
     
-    static func post(url url: String, header: Dictionary<String, String>, params: Dictionary<String, String>, completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void) {
+    static func post(url: String, header: Dictionary<String, String>, params: Dictionary<String, String>, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) {
         sendRequest(
             url: url,
             method: "POST",
@@ -30,7 +30,7 @@ class RicohAPIAuthRequest {
         )
     }
     
-    static func upload(url url: String, header: Dictionary<String, String>, data: NSData, completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void) {
+    static func upload(url: String, header: Dictionary<String, String>, data: Data, completionHandler: @escaping (Data?, URLResponse?, NSError?) -> Void) {
         sendRequestToUpload(
             url: url,
             method: "POST",
@@ -40,7 +40,7 @@ class RicohAPIAuthRequest {
         )
     }
     
-    static func download(url url: String, header: Dictionary<String, String>, completionHandler: (NSURL?, NSURLResponse?, NSError?) -> Void) {
+    static func download(url: String, header: Dictionary<String, String>, completionHandler: @escaping (URL?, URLResponse?, Error?) -> Void) {
         sendRequestToDownload(
             url: url,
             method: "GET",
@@ -49,7 +49,7 @@ class RicohAPIAuthRequest {
         )
     }
     
-    static func delete(url url: String, header: Dictionary<String, String>, completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void) {
+    static func delete(url: String, header: Dictionary<String, String>, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) {
         sendRequest(
             url: url,
             method: "DELETE",
@@ -59,43 +59,44 @@ class RicohAPIAuthRequest {
         )
     }
     
-    static func sendRequest(url url: String, method: String, header: Dictionary<String, String>, params: Dictionary<String, String>, completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void) {
+    static func sendRequest(url: String, method: String, header: Dictionary<String, String>, params: Dictionary<String, String>, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) {
         let request = generateRequest(url: url, method: method, header: header, params: params)
-        let config = NSURLSessionConfiguration.defaultSessionConfiguration()
-        let session = NSURLSession(configuration: config)
-        let task = session.dataTaskWithRequest(request, completionHandler: completionHandler)
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        let task = session.dataTask(with: request, completionHandler: completionHandler)
         task.resume()
     }
     
-    static func sendRequestToUpload(url url: String, method: String, header: Dictionary<String, String>, data: NSData, completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void) {
+    static func sendRequestToUpload(url: String, method: String, header: Dictionary<String, String>, data: Data, completionHandler: @escaping (Data?, URLResponse?, NSError?) -> Void) {
         let request = generateRequest(url: url, method: method, header: header, params: [String: String]())
-        let config = NSURLSessionConfiguration.defaultSessionConfiguration()
-        let session = NSURLSession(configuration: config)
-        let task = session.uploadTaskWithRequest(request, fromData: data, completionHandler: completionHandler)
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        let task = session.uploadTask(with: request as URLRequest, from: data, completionHandler: completionHandler as! (Data?, URLResponse?, Error?) -> Void)
         task.resume()
     }
     
-    static func sendRequestToDownload(url url: String, method: String, header: Dictionary<String, String>, completionHandler: (NSURL?, NSURLResponse?, NSError?) -> Void) {
+    static func sendRequestToDownload(url: String, method: String, header: Dictionary<String, String>, completionHandler: @escaping (URL?, URLResponse?, Error?) -> Void) {
         let request = generateRequest(url: url, method: method, header: header, params: [String: String]())
-        let config = NSURLSessionConfiguration.defaultSessionConfiguration()
-        let session = NSURLSession(configuration: config)
-        let task = session.downloadTaskWithRequest(request, completionHandler: completionHandler)
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        let task = session.downloadTask(with: request, completionHandler: completionHandler)
         task.resume()
     }
     
-    static func generateRequest(url url: String, method: String, header: Dictionary<String, String>, params: Dictionary<String, String>) -> NSMutableURLRequest {
-        let request = NSMutableURLRequest(URL: NSURL(string: url)!)
-        request.HTTPMethod = method
+    static func generateRequest(url: String, method: String, header: Dictionary<String, String>, params: Dictionary<String, String>) -> URLRequest {
+        
+        var request = URLRequest(url: URL(string: url)!)
+        request.httpMethod = method
         for (key, value) in header {
             request.setValue(value, forHTTPHeaderField: key)
         }
-        request.HTTPBody = joinParameters(params: params).dataUsingEncoding(NSUTF8StringEncoding)
+        request.httpBody = joinParameters(params: params).data(using: String.Encoding.utf8)
         return request
     }
     
-    static func joinParameters(params params: Dictionary<String, String>) -> String {
+    static func joinParameters(params: Dictionary<String, String>) -> String {
         return params.map({(key, value) in
             return "\(key)=\(value)"
-        }).joinWithSeparator("&")
+        }).joined(separator: "&")
     }
 }
